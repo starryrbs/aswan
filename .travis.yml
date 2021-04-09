@@ -4,6 +4,7 @@ dist: xenial
 services:
   - mongodb
   - redis
+  - mysql
 os:
   - linux
 language: python
