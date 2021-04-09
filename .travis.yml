@@ -17,7 +17,6 @@ install:
 
 before_script:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
-  - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
 
 script:
   - tox
