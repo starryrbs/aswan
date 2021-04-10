@@ -16,7 +16,7 @@ install:
   - pip install tox-travis
 
 before_script:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS risk_control;'
+  - mysql -e 'CREATE DATABASE risk_control DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;'
 
 script:
   - tox
