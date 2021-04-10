@@ -9,8 +9,9 @@ DATABASES = {
         "PORT": 3306,
         "USER": "root",
         "PASSWORD": os.environ.get("MYSQL_PASSWORD", "root"),
-        "DATABASE_CHARSET": "utf8",
+        "DATABASE_CHARSET": "utf8mb4",
         "NAME": "risk_control",
+        'OPTIONS': {'charset': 'utf8mb4'},
     },
 }
 
